@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <input type="text" class="afisaj"></input>
+      <button class="button" id="b-7">7</button>
+      <button class="button" id="b-8">8</button>
+      <button class="button" id="b-9">9</button>
+      <button class="operator" id="op-divide">/</button>
+      <button class="button" id="b-4">4</button>
+      <button class="button" id="b-5">5</button>
+      <button class="button" id="b-6">6</button>
+      <button class="operator" id="op-multiply">*</button>
+      <button class="button" id="b-1">1</button>
+      <button class="button" id="b-2">2</button>
+      <button class="button" id="b-3">3</button>
+      <button class="operator" id="op-minus">-</button>
+      <button class="button" id="b-0">0</button>
+      <button class="button" id="point">.</button>
+      <button class="operator" id="op-plus">+</button>
+      <button class="equal" id="op-equal" onclick="afisaj.value=eval(afisaj.value)" >=</button>
+    </section>
+    <section>
+      <div class = 
+      "escape"><p>Press <button id="esc-button" onclick = "afisaj.value = ''">Escape</button>  button to empty the display</p></div>
+    </section>
+    <footer><p class="footer">&copy;Ecaterina Ștefan &nbsp; <span class="year"></span>
+       </p></footer>
+  </body>
+</html>

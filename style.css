@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+}
+
+.button,
+.operator {
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border-radius: 10px;
+  font-weight: 900;
+  box-shadow: 8px 8px 10px rgb(235, 247, 210);
+  background: transparent;
+  color: rgb(235, 247, 210);
+}
+
+.button:hover,
+.operator:hover,
+#op-equal:hover {
+  background-color: rgba(243, 70, 13, 0.688);
+  color: black;
+}
+
+.container {
+  display: grid;
+  width: 25%;
+  height: 400px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 5em auto;
+  border: 20px solid rgb(30, 7, 7);
+  border-radius: 10px;
+  gap: 5px;
+  background: rgb(30, 7, 7);
+}
+
+.afisaj {
+  grid-column: 1/-1;
+  background-color: rgb(10, 10, 22);
+  color: white;
+  font-size: 2em;
+  color: white;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.afisaj:hover {
+  background-color: rgb(73, 18, 18);
+}
+
+#op-equal {
+  padding: 15px 12px;
+  font-size: 2em;
+  border-radius: 10px;
+}
+
+.escape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+#esc-button {
+  font-weight: 700;
+  background-color: rgb(30, 7, 7);
+  color: rgb(235, 247, 210);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.footer {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-style: italic;
+}
